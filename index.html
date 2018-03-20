@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <title>jQuery Lite</title>
+  <script type="text/javascript" src="./bundle.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+
+</head>
+<body>
+  <script>
+    $m(() => {
+      $m('.my-div.cool').on('click', () => alert('clicked'));
+      $m('.remove-me').remove();
+
+    });
+  </script>
+
+  <div class="my-div cool">
+    <h1>Hello!</h1>
+    <p class="remove-me">Remove me!</p>
+  </div>
+
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+</body>
+</html>
